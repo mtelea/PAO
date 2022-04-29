@@ -1,7 +1,7 @@
 # PAO
 Programare Avansata pe Obiecte
 
-E-tciketing Platform
+E-ticketing Platform
 
 Possbile actions:
 
