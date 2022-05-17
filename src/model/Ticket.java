@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 
 public class Ticket {
 
+    private String eventName;
     private String event;
     private BigDecimal price;
 
@@ -14,6 +15,10 @@ public class Ticket {
     public Ticket(String event, BigDecimal price){
         this.event = event;
         this.price = price;
+    }
+
+    public String getEventName(){
+        return eventName;
     }
 
     public String getEvent() {
