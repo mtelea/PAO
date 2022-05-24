@@ -37,6 +37,8 @@ public class Ticket {
         this.price = price;
     }
 
+
+
     @Override
     public String toString() {
         return "Ticket{" +

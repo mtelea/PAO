@@ -63,6 +63,24 @@ public class Account {
         this.tickets = tickets;
     }
 
+    public void buyTicket(Ticket t){
+        if (card.getSold().compareTo(t.getPrice()) > 1){
+            tickets.add(t);
+            card.setSold(card.getSold().subtract(t.getPrice()));
+        }
+        else{
+            System.out.println("Fonduri insuficiente pentru achizitionarea acestui bilet!");
+        }
+
+
+    }
+
+    public void refundTicket(Ticket t){
+        card.setSold(card.getSold().add(t.getPrice()));
+        tickets.remove(t);
+        System.out.println("Banii au fost restituiti! Ne pare rau ca nu mai participi la acest eveniment :(");
+    }
+
     @Override
     public String toString() {
         return "Account{" +

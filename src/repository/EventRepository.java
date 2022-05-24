@@ -27,7 +27,7 @@ public class EventRepository {
 
     }
 
-    void addEvent(Event event){
+    public void addEvent(Event event){
         String insertEvent ="";
         insertEvent = "INSERT INTO events"+
                 "(name,place,country,city,street,number,date,details)" +
